@@ -1,11 +1,17 @@
 # pOrg
 R package pOrg for project organization.
 
-The pOrg is a very little weight R package for data science project organization in the speficied directory. It is intended to use at the starting of a new project to quickly generate a prefered project structure. 
+The pOrg is a very lightweight R package for data science project organization in the speficied directory. It is intended to use at the starting of a new project to quickly generate a prefered project structure.
 
-The main function is `pOrg()` with the working directory as the default root folder.
+The are two functions:
 
-Project organization can be controled through character variables specifying the first and second level structure, as well as text template for three files: README.txt, functions.R and Rmd_template.Rmd.
+`pOrg()` builds the project folder structure with the working directory as the default root folder. The project folder organization can be controled through character variables specifying the first and second level structure.
+
+`set_pOrg_txt()` allows for setting the text used as template for the following three files as well as returning to the default. By setting them, the user can specify preferences that will be stored for future use, allowing for customization of the templates.
+
+* **README.txt**: a readme file placed at the top of the folder structure
+* **functions.R**: an R file template containing the custom functions for the project. By default is placed in the */code* folder 
+* **Rmd_template.Rmd**: Rmd template containing the YAML heading and other options for personal project.
 
 The default project organization is the one I use:
 ```
