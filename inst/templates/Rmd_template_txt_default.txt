@@ -1,0 +1,108 @@
+'---
+title: "Title"
+author: "Author"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    toc_depth: 5
+    # code_folding: hide
+  word_document:
+    toc: yes
+    toc_depth: "5"
+editor_options:
+  chunk_output_type: console
+---
+
+<!-- Some CSS style -->
+<style type="text/css">
+  body, td {
+    font-size: 14px;
+  }
+  code.r{
+    font-size: 12px;
+  }
+  pre {
+    font-size: 12px
+  }
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, error=T, message = F, cache = FALSE)
+```
+***
+***
+
+#Project summary
+
+#Setup
+
+## Libraries
+
+```{r}
+
+```
+
+## Global settings
+
+
+**Relative path variabels**
+```{r}
+#Relative paths when knitting============================================================================
+    #When knitting the relative path change as the working directory of the knitting enviorment changes to the
+    #working directory of the file instead of the project.
+
+    # DATA
+    data_derived_path <- "../../data/derived/"
+    data_original_path <- "../../data/original/"
+
+    #CODE
+    code_exp_path <- "../exploratory/"
+    code_working_path <- getwd() #Woeking code is the current path
+    code_final_path <- "../final_code/"
+
+    #OUTPUT
+    output_figures_path <- "../../output/figures/"
+    output_plots_path <- "../../output/plots/"
+    output_figures_path <- "../../output/tables/"
+
+    #REPORT
+    report_path <- "../../report/"
+
+    #PROJECT DOCUMENTS PATH
+    project_documents_path <- "../../project_documents/"
+
+    ```
+
+    ```{r include=FALSE, echo=FALSE}
+    #Relative paths when console output
+    #(This is not included in the knitted document)
+
+    # DATA
+    data_derived_path <- "data/derived/"
+    data_original_path <- "data/original/"
+
+    #CODE
+    code_exp_path <- "code/exploratory/"
+    code_working_path <- "code/working_code/"
+    code_final_path <- "code/final_code/"
+
+    #OUTPUT
+    output_figures_path <- "output/figures/"
+    output_plots_path <- "output/plots/"
+    output_figures_path <- "output/tables/"
+
+    #REPORT
+    report_path <- "report/"
+
+    #PROJECT DOCUMENTS PATH
+    project_documents_path <- "project_documents/"
+    ```
+
+## Read data
+
+    ```{r}
+
+    ```
+    '

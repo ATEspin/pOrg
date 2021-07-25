@@ -10,11 +10,8 @@ pOrg(
   folder_lv2 = c("data/original", "data/derived", "output/plots", "output/figures",
     "output/tables", "code/exploratory", "code/final_code", "code/working_code"),
   include_readme = T,
-  readme.txt = "default",
   include_function = T,
-  function.txt = "default",
   include_rmd_template = T,
-  rmd.template.txt = "default",
   folder_files = "code"
 )
 }
@@ -34,12 +31,6 @@ By default uses the working directory returned by getwd().}
 
 \item{folder_files}{character with the name of the folder from folder_lv1 or folder_lv2
 for placing the function.R and Rmd template files.}
-
-\item{readme_txt}{character containing the text for the README file}
-
-\item{function_txt}{character containing the text for building the function.R file}
-
-\item{rmd_template_txt}{character containing the text for building the rmd template file}
 }
 \description{
 This function creates the folder structure given the specified path.

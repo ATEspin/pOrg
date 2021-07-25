@@ -1,0 +1,14 @@
+"#' Script containing the custom functions used in the project. These functions
+#' can be loaded into any script using the source() function.
+#'
+#' Documentation structure based of regOx2
+#'
+#' === Function name =======================================================
+#'
+#' Function description:
+#'
+#' Arguments:
+#' @param
+#'
+#' Values
+#' @returns "
